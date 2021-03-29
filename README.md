@@ -36,7 +36,7 @@ $ yay -S drogon-git
 
 #### Build from source \(\*NIX, including OS X\)
 
-Please install the dependencies before running the commands. Required dependencies include: [jsoncpp](https://github.com/open-source-parsers/jsoncpp). And optional ones include: sqlite3, mariadb/mysql, postgresql, [herdis](https://github.com/zond/herdis), [c-ares](https://c-ares.haxx.se/) and [openssl](https://www.openssl.org/).
+Please install the dependencies before running the commands. Required dependencies include: [jsoncpp](https://github.com/open-source-parsers/jsoncpp) and [zlib](https://zlib.net/). And optional ones include: sqlite3, mariadb/mysql, postgresql, brotli, [herdis](https://github.com/zond/herdis), [c-ares](https://c-ares.haxx.se/) and [openssl](https://www.openssl.org/).
 
 ```text
 git clone https://github.com/an-tao/drogon --recursive
@@ -59,7 +59,7 @@ vcpkg integrate install
 Once you installed Drogon. You can open a terminal/command prompt and type `drogon_ctl version`. You should see the version of Drogon that is installed to your computer.
 
 {% hint style="info" %}
-This doesn't work on Windows, installed via vcpkg. Please trust that you have installed everything correctly.
+This check doesn't work on Windows, installed via vcpkg. Please trust that you have installed everything correctly.
 {% endhint %}
 
 ```text
