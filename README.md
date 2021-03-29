@@ -15,16 +15,16 @@ Drogon's repository: [https://github.com/an-tao/drogon](https://github.com/an-ta
 
 Drogon's documentation: [https://drogon.docsforge.com](https://drogon.docsforge.com)
 
-### Advantages of Drogon
+## Advantages of Drogon
 
 1. Drogon is fast. While I their goal isn't being \#1, it is good to know that the framework can scale. Even if you don’t need the scale, you can run Drogon on resource-restricted hardware with a pretty decent performance.
 2. Drogon has a very open development model. Every contribution is welcome, the developers are pretty open to every PR if it doesn’t affect performance very much.
 3. Drogon is licensed under MIT. A very liberal and allows to use the framework for commercial projects.
 4. Drogon is cross platform. It runs on Linux, Windows, OS X, \*BSD and ReactOS!
 
-### Installation
+## Installation
 
-#### Arch Linux
+### Arch Linux
 
 {% hint style="info" %}
 Installation on different Linux distros requires a different process. Please search your distro's repository
@@ -34,7 +34,7 @@ Installation on different Linux distros requires a different process. Please sea
 $ yay -S drogon-git
 ```
 
-#### Build from source \(\*NIX, including OS X\)
+### Build from source \(\*NIX, including OS X\)
 
 Please install the dependencies before running the commands. Required dependencies include: [jsoncpp](https://github.com/open-source-parsers/jsoncpp) and [zlib](https://zlib.net/). And optional ones include: sqlite3, mariadb/mysql, postgresql, brotli, [herdis](https://github.com/zond/herdis), [c-ares](https://c-ares.haxx.se/) and [openssl](https://www.openssl.org/).
 
@@ -47,14 +47,14 @@ make -j
 sudo make install
 ```
 
-#### Windows \(vcpkg\)
+### Windows \(vcpkg\)
 
 ```text
 vcpkg install drogon[core, ctl]:x86-windows
 vcpkg integrate install
 ```
 
-### Verify Installation
+## Verify Installation
 
 Once you installed Drogon. You can open a terminal/command prompt and type `drogon_ctl version`. You should see the version of Drogon that is installed to your computer.
 

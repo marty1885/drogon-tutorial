@@ -68,7 +68,7 @@ Now open your browser, and type `http://127.0.0.1` in the URL. Don't be shocked 
 
 ![](../.gitbook/assets/image.png)
 
-### Hello World
+## Hello World
 
 Now we can start working. The simplest way in Drogon to add an handler is through the `registerHandler()` method and passing it the path and the handler. Then the handler will be executed upon an user accessing said path. So having "/hello" as the path means it will be executed when users visit the "/hello" page.
 
