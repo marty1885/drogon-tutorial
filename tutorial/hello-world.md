@@ -1,15 +1,14 @@
 ---
 description: >-
-  In this section, we'll learn how to create a very basic application in Drogon.
-  Drogon can act like an application (API) and web server (static files) at the
-  same time.
+  In this section, we'll learn how to create a very basic application in Drogon
+  from scratch. Drogon can be easily integrated into a CMake project.
 ---
 
 # Hello World
 
 ## A blank slate
 
-Let's start with the simplest application possible - An app that does absolutely nothing.
+Let's start with the simplest application possible - An app that does absolutely nothing. We first include Drogon's header file. Then call **addListener\(\)** to tell Drogon to start \(listen\) the server on 127.0.0.1 and port 8080. Finally **run\(\)** kicks everything into action.
 
 {% code title="example1.cpp" %}
 ```cpp
@@ -64,9 +63,11 @@ You should see an executable file `example1` after a successful build. Running i
 ❯ ./example1
 ```
 
-Now open your browser, and type `http://127.0.0.1` in the URL. Don't be shocked when a 404 page shows up. It's exactly what should happen. That means the app is running and we haven't added any resource or handlers yet.
+Now open your browser, and type `http://127.0.0.1:8080` in the URL. Don't be shocked when a 404 page shows up. It's exactly what should happen. That means the app is running and we haven't added any resource or handlers yet.
 
 ![](../.gitbook/assets/image.png)
+
+This is a good stop to start figuring out what is wrong if anything goes south. Common pitfalls includes having a system provided build and a self made build installed together. Or having a dependency being out of date. Please remove the extra version or perform a system update and try again.
 
 ## Hello World
 
@@ -82,13 +83,13 @@ app().registerHandler("/hello", [](const HttpRequestPtr& req,
 });
 ```
 
-Recompile, run and enter `http://127.0.0.1:8080/hello` into the URL bar. Now you should see this.
-
-![](../.gitbook/assets/image%20%281%29.png)
-
 {% hint style="info" %}
 All paths starts with a '/' \(forward slash\). Akin to absolute paths in an UNIX system. "/" \(a single forward slash\) is the default page for most browsers.
 {% endhint %}
+
+Recompile, run and enter `http://127.0.0.1:8080/hello` into the URL bar. Now you should see "Hello World" in the page.
+
+![](../.gitbook/assets/image%20%281%29.png)
 
 
 

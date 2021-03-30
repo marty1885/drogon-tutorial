@@ -7,6 +7,10 @@ description: >-
 
 # About Drogon
 
+{% hint style="warning" %}
+ **Note:** This tutorial series is not a part of the Drogon project nor Drogon's documentation. It is an attempt at making a more structured and easy to read material.
+{% endhint %}
+
 ## What is Drogon
 
 Drogon is a community developed C++ web application framework. It provides an event driven, asynchronous, cross-platform and highly efficient environment for building web applications. Just like NodeJS, PHP and Golang. Furthermore, Drogon provides a PHP-like server side rendering system for JS-less and other scenarios.
@@ -59,7 +63,7 @@ vcpkg integrate install
 Once you installed Drogon. You can open a terminal/command prompt and type `drogon_ctl version`. You should see the version of Drogon that is installed to your computer.
 
 {% hint style="info" %}
-This check doesn't work on Windows, installed via vcpkg. Please trust that you have installed everything correctly.
+This check doesn't work on Windows, installed via vcpkg. Please try compiling an example application to see if everything is installed correctly
 {% endhint %}
 
 ```text
