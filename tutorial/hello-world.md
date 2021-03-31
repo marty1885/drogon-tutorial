@@ -1,7 +1,8 @@
 ---
 description: >-
   In this section, we'll learn how to create a very basic application in Drogon
-  from scratch. Drogon can be easily integrated into a CMake project.
+  from scratch. Drogon can be  integrated into a CMake project. And sure, the
+  classic Hello World.
 ---
 
 # Hello World

@@ -5,7 +5,7 @@
 ## Tutorial
 
 * [Hello World](tutorial/hello-world.md)
-* [Requests and routing](tutorial/requests-and-routing.md)
+* [Requests, pages and routing](tutorial/requests-and-routing.md)
 * [Controllers](tutorial/controllers.md)
 * [Database](tutorial/database.md)
 * [Asynchronous C++](tutorial/asynchronous-c++.md)
